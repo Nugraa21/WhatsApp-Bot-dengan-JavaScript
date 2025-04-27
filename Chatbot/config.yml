@@ -1,0 +1,18 @@
+# config.yml
+
+language: id
+
+pipeline:
+  - name: WhitespaceTokenizer
+  - name: RegexFeaturizer
+  - name: LexicalSyntacticFeaturizer
+  - name: CountVectorsFeaturizer
+  - name: DIETClassifier
+  - name: EntitySynonymMapper
+  - name: ResponseSelector
+    retrieval_intent: faq
+  - name: FallbackClassifier
+    threshold: 0.3
+
+policies:
+  - name: RulePolicy

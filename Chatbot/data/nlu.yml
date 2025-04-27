@@ -1,0 +1,26 @@
+# data/nlu.yml
+
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hai
+    - halo
+    - apa kabar
+    - selamat pagi
+    - selamat sore
+
+- intent: goodbye
+  examples: |
+    - dadah
+    - sampai jumpa
+    - selamat tinggal
+    - bye
+
+- intent: ask_time
+  examples: |
+    - jam berapa sekarang
+    - bisa kasih tahu jam?
+    - sekarang pukul berapa
+    - waktu sekarang
